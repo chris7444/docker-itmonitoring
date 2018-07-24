@@ -1,5 +1,6 @@
+ARG BRANCH
 #https://docs.docker.com/engine/reference/builder/
-FROM splunk/splunk:7.0.3
+FROM splunk/splunk:${BRANCH}
 
 ENV SPLUNK_BACKUP_APP ${SPLUNK_BACKUP_DEFAULT_ETC}/etc/apps
 

@@ -1,4 +1,5 @@
-FROM splunk/universalforwarder:7.0.3
+ARG BRANCH
+FROM splunk/universalforwarder:${BRANCH}
 
 ENV SPLUNK_BACKUP_APP ${SPLUNK_BACKUP_DEFAULT_ETC}/etc/apps
 
